@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0px;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.container:hover {
+  background-color: var(--border-color);
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-inline: 30px;
+  width: 100%;
+}
+
+.avatar {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.email_container {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}

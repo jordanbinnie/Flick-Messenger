@@ -1,0 +1,264 @@
+:root {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f6f6f6;
+  --third-bg-color: #31343c;
+  --main-color: #31343c;
+  --secondary-color: #808080;
+  --third-color: #ffffff;
+  --color-blue: #2e9bff;
+  --border-color: #fafafa;
+  --box-shadow-color: 0 0 0;
+  --color-black: #444444;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px var(--secondary-bg-color) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--secondary-bg-color) inset !important;
+  -webkit-text-fill-color: var(--main-color);
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.App {
+  display: flex;
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+}
+
+.heading {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.32;
+}
+
+.paragraph {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.paragraph--1 {
+  font-size: 1rem;
+}
+
+.paragraph--2 {
+  font-size: 0.75rem;
+}
+
+.p-grey {
+  color: var(--secondary-color);
+}
+
+.heading--extraLarge {
+  font-size: 2rem;
+}
+
+.heading--1 {
+  font-size: 1.5rem;
+}
+
+.heading--2 {
+  font-size: 1.25rem;
+}
+
+.heading--3 {
+  font-size: 1rem;
+}
+
+.paragraph--1 {
+  font-size: 1rem;
+}
+
+.paragraph--2 {
+  font-size: 0.75rem;
+}
+
+.liked-message {
+  fill: #ef233c;
+}
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--main-bg-color);
+  overflow: scroll;
+}
+
+.home-page-content {
+  margin: 50px;
+  margin-top: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 103px);
+  min-height: 800px;
+}
+
+.landing-page-heading {
+  margin-top: 30px;
+  z-index: 1;
+}
+
+.home-page-content .paragraph {
+  margin: 5px;
+}
+
+.loading-heading {
+  display: flex;
+}
+
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page_brief-container {
+  margin-top: 15px;
+  background-color: var(--border-color);
+  padding: 30px 30px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  border-radius: 5px;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.beta-badge {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: var(--third-bg-color);
+  color: var(--third-color);
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+.home-page-content .heading--2,
+.home-page-content .heading--1 {
+  text-align: center;
+  z-index: 1;
+}
+.spacer-block--top {
+  height: 50px;
+  width: 100%;
+}
+
+.spacer-block--bottom {
+  height: 100px;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  height: 103px;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+}
+
+.menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--third-bg-color);
+  border-radius: 100px;
+  fill: var(--third-color);
+  padding: 10px;
+  position: absolute;
+}
+
+.flick-logo_container {
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--center {
+  margin: 0 auto;
+  padding-inline: 30px;
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+
+.chat-page_container {
+  display: flex;
+}
+
+.chat-page_chat-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.LoginPage {
+  width:  100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#emblem-image {
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#emblem-heading {
+  color: #2c2c2c;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+}

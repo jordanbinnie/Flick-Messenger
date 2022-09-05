@@ -1,0 +1,50 @@
+.image-container {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.image {
+  max-height: 300px;
+  min-height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#reciever {
+  margin-left: 50px;
+  position: relative;
+  overflow: visible;
+}
+
+#sender {
+  margin-left: auto;
+  margin-right: 50px;
+  position: relative;
+  overflow: visible;
+}
+
+.liked-message-container {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  background-color: var(--border-color);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  box-shadow: rgb(var(--box-shadow-color) / 20%) 0px 2px 24px 0px;
+}
+
+#reciever.noMargin {
+  margin-left: 10px !important;
+}
+
+#sender.noMargin {
+  margin-right: 10px !important;
+}

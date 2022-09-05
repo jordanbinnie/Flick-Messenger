@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0px;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.container:hover {
+  background-color: var(--secondary-bg-color);
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-inline: 30px;
+  width: 100%;
+}
+
+.recipient_info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.avatar {
+  margin-right: 15px;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.email {
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+
+.latest-message_container {
+  display: flex;
+  width: 100%;
+}
+
+.time-stamp {
+  display: flex;
+  align-items: flex-start;
+}
+
+#latest-message_message {
+  width: fit-content;
+  white-space: nowrap;
+}
+
+#latest-message_username {
+  min-width: fit-content;
+  white-space: nowrap;
+}

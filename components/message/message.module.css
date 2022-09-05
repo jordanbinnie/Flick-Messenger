@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  overflow: visible;
+}
+
+.first-message_container:not(:nth-child(1)) {
+  margin-top: 3rem;
+}
+
+#sender {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row-reverse;
+  overflow: visible;
+}
+
+#reciever {
+  display: flex;
+  overflow: visible;
+}
+
+.content {
+  overflow: visible;
+}
+
+.content-top {
+  display: flex;
+  align-items: center;
+}
+
+.secondary-message_container .reciever {
+  margin-left: 50px;
+  overflow: visible;
+}
+
+.secondary-message_container .sender {
+  margin-right: 50px;
+  overflow: visible;
+}
+
+.avatar {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.message-element {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+  min-width: 60px;
+  position: relative;
+  text-align: right;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.sender {
+  margin-left: auto;
+  background-color: var(--color-blue);
+  color: var(--third-color);
+  overflow: visible;
+}
+
+.reciever {
+  background-color: var(--border-color);
+  text-align: left;
+  overflow: visible;
+}
+
+.timestamp {
+  color: var(--secondary-color);
+  padding: 10px;
+  font-size: 8px;
+  bottom: 0;
+  text-align: right;
+  right: 0;
+}
+
+.timestamp-first {
+  color: var(--secondary-color);
+  font-size: 12px;
+  padding: 0 0.5rem;
+}
+
+.username {
+  padding: 0 0.5rem;
+}
+
+#reciever .username {
+  margin-left: 0.5rem;
+}
+
+#sender .username {
+  margin-right: 0.5rem;
+}
+
+.liked-message-container {
+  position: absolute;
+  right: 0;
+  bottom: -17px;
+  background-color: var(--border-color);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  box-shadow: rgb(var(--box-shadow-color) / 20%) 0px 2px 24px 0px;
+}

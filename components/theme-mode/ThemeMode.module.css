@@ -1,0 +1,49 @@
+.theme-mode {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+}
+
+.theme-mode_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  box-shadow: transparent 0px 0px 0px 2px inset;
+  border-radius: 32px;
+}
+
+.night-mode-toggler {
+  height: 50px;
+  width: 80px;
+  background-color: var(--color-black);
+  box-shadow: transparent 0px 0px 0px 2px inset;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggler-switch {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 6px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switch-icon {
+  fill: var(--third-bg-color);
+}
