@@ -6,7 +6,7 @@
 
 ## Introduction
 
-1 on 1 messaging platform powered by fireabse as a backend. 
+1 on 1 messaging platform powered by Firebase as a backend. 
 
 Supports both text and image types, as well as having the functionality to like messages. 
 
